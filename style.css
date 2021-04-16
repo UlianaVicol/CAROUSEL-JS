@@ -1,0 +1,126 @@
+* {box-sizing:border-box;}
+body {
+  /*background-color: #222;*/
+}
+#carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#carouselSlides {
+  /*border: 2px solid white;*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.281);
+
+  border:none;
+  outline:none;
+  transition:all .3s linear;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  transform: scale(1.2);
+  background-color: rgba(116, 115, 115, 0.527);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+#carouselTitles {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  max-width: 90%;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: left;
+    /*white-space: pre-wrap;*/
+}
+#carousel h4{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.096);
+  position: absolute;
+  bottom: 0.03em;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+.container span{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+.imageIndicator { 
+  margin: 15px;
+  width: 15%;
+  border: 2px solid white;
+}
+.container img:hover{
+  opacity: 0.6;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.btn-play{
+  text-align: center!important;
+}
+.btn-play {
+  width: 100px;
+  height: 40px;
+  opacity: 0.5;
+  background: rgba(12, 12, 12, 0.582);
+  border-radius: 5px;
+  position: absolute;
+  color:rgb(246, 246, 246);
+  /*bottom: 11%;*/
+  top: 81%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  overflow: hidden;
+  }
+  .btn-play:hover { 
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.25) inset,
+    -8px -8px 12px rgba(255,255,255,0.3) inset;
+    opacity:1;
+    }
+  .bi {
+    color: rgb(68, 7, 7);
+  }
+  
+  .active {
+    filter: contrast(200%);
+    border: 5px solid rgba(93, 3, 3, 0.692);
+}

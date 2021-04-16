@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAROUSEL JS | CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body onkeydown="action()">
+
+        <div id="carousel">
+            <div class="slides" id="carouselSlides">
+    
+            </div>
+            <div id="carouselTitles">
+                <!-- HW7*: Add effects to titles-->
+            </div>
+            <!-- HW5*: Arrows witH fontawesome-->
+            
+            <!-- HW8*: Keyboard enable Carousel-->
+            <div class="container">
+                
+                <span id="carouselIndicators"></span>
+            </div>
+                <div>
+                <!-- HW6*: Style it -->
+                <button onclick="prev()" class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="next()" class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button onclick="play()" id="play" class="btn-play"><i class="fas fa-play"></i></button>
+        </div>
+    
+        <script src="carousel.js"></script>
+    </body>
+    
+    </html>
+</body>
+</html>
