@@ -20,7 +20,7 @@ const TITLES = [
 ]
 
 /*HW1: const -  aceeasta inseamna ca valoarea unei constante nu poate fi schimbata si nu poate fi redeclarata, valoarea lor ramane aceeasi, 
-                fixa si nu trebuie schimbata pe parcurul intregului cod*/
+                fixa si nu trebuie schimbata pe intreg cod*/
 
 
 function showImage(n) {
