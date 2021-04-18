@@ -13,6 +13,29 @@ body {
   height: 100%;
   overflow: hidden;
 }
+#carouselTitles {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  max-width: 90%;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: left;
+    /*white-space: pre-wrap;*/
+}
+#carousel h4{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 img {
   height: 100%;
   width: 100%;
@@ -45,29 +68,7 @@ img {
   background-color: rgba(116, 115, 115, 0.527);
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
-#carouselTitles {
-  overflow: hidden;
-  z-index: 2;
-  position: absolute;
-  max-width: 90%;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: white;
-  background-color: rgba(0,0,0,.7);
-  padding: 10px 20px;
-  text-decoration: none;
-  text-align: left;
-    /*white-space: pre-wrap;*/
-}
-#carousel h4{
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 5px 0;
-  font-size: 2em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+
 .container {
   background-color: rgba(255, 255, 255, 0.096);
   position: absolute;
@@ -93,9 +94,7 @@ img {
   transform: scale(1.2);
   cursor: pointer;
 }
-.btn-play{
-  text-align: center!important;
-}
+
 .btn-play {
   width: 100px;
   height: 40px;
